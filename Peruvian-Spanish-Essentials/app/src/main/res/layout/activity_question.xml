@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#1A1AC9"
+    tools:context="com.peruvianspanishessentials.stephanie.peruvianspanishessentials.Question">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FF9200"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/questionLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/questionImage"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/questionSpeakerButton"
+            android:src="@drawable/speaker100"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/answerRadioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/questionLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:minHeight="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing "
+                    android:id="@+id/radioButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/phraseSpeakerButton"
+                    android:layout_toStartOf="@+id/phraseSpeakerButton" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phraseSpeakerButton"
+                    android:src="@drawable/speaker100"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:minHeight="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phrase 2"
+                    android:id="@+id/radioButton2"
+                    android:layout_below="@+id/radioButton"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/phrase2SpeakerButton"
+                    android:layout_toStartOf="@+id/phrase2SpeakerButton" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phrase2SpeakerButton"
+                    android:src="@drawable/speaker100"
+                    android:layout_below="@+id/radioButton"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/radioButton2"
+                    android:visibility="invisible"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:minHeight="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phrase 3"
+                    android:id="@+id/radioButton3"
+                    android:layout_below="@+id/radioButton2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/phrase3SpeakerButton"
+                    android:layout_toStartOf="@+id/phrase3SpeakerButton" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phrase3SpeakerButton"
+                    android:src="@drawable/speaker100"
+                    android:layout_below="@+id/radioButton2"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Answer"
+        android:id="@+id/button"
+        android:onClick="checkAnswer"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/button2"
+        android:layout_below="@+id/answerRadioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

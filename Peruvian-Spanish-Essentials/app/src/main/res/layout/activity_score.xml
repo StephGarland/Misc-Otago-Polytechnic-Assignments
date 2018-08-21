@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#1A1AC9"
+    tools:context="com.peruvianspanishessentials.stephanie.peruvianspanishessentials.Score">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF9200"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/questionLayout">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivPerson1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/woman1"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivPerson2"
+            android:src="@drawable/man3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/ivFace1"
+            android:layout_alignStart="@+id/ivFace1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFace1"
+            android:src="@drawable/smiling29"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="36dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFace2"
+            android:src="@drawable/smiling29"
+            android:layout_alignTop="@+id/ivFace1"
+            android:layout_alignRight="@+id/ivPerson1"
+            android:layout_alignEnd="@+id/ivPerson1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivPerson3"
+            android:src="@drawable/man2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFace3"
+            android:src="@drawable/smiling29"
+            android:layout_alignTop="@+id/ivFace4"
+            android:layout_toRightOf="@+id/ivFace4"
+            android:layout_toEndOf="@+id/ivFace4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivPerson4"
+            android:src="@drawable/woman5"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivPerson5"
+            android:src="@drawable/woman3"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/ivPerson2"
+            android:layout_toEndOf="@+id/ivPerson2"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFace4"
+            android:src="@drawable/smiling29"
+            android:layout_alignTop="@+id/ivFace5"
+            android:layout_alignLeft="@+id/ivPerson3"
+            android:layout_alignStart="@+id/ivPerson3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFace5"
+            android:src="@drawable/smiling29"
+            android:layout_alignTop="@+id/ivFace2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Mui Bien!"
+            android:id="@+id/tvMuiBien"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ivPerson3"
+            android:layout_toStartOf="@+id/ivPerson3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Results"
+            android:id="@+id/tvResults"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/tvMuiBien"
+            android:layout_alignLeft="@+id/ivPerson2"
+            android:layout_alignStart="@+id/ivPerson2"
+            android:layout_alignRight="@+id/ivFace3"
+            android:layout_alignEnd="@+id/ivFace3"
+            android:textAlignment="center"
+            android:layout_alignParentEnd="false"
+            android:layout_above="@+id/ivPerson1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START AGAIN"
+            android:id="@+id/homeButton"
+            android:layout_above="@+id/ivPerson2"
+            android:layout_alignRight="@+id/ivPerson4"
+            android:layout_alignEnd="@+id/ivPerson4" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

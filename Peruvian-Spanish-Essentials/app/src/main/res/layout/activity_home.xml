@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Home"
+    android:background="#1A1AC9">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/section1Layout"
+        android:background="#FFA62E">
+
+        <ImageButton
+            android:background="@null"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/section1Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/number1_blue"
+            android:scaleType="fitCenter"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/question1Button"
+            android:src="@drawable/man1"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/question2Button"
+            android:src="@drawable/woman1"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/question3Button"
+            android:src="@drawable/woman3"
+            android:onClick="openQuestion"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/section2Layout"
+        android:background="#FF9200"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/section1Layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:background="@null"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/section2Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/number2_blue"
+            android:scaleType="fitCenter"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/question4Button"
+            android:src="@drawable/woman5"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/question5Button"
+            android:src="@drawable/man2"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/question6Button"
+            android:src="@drawable/man3"
+            android:onClick="openQuestion"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/section3Layout"
+        android:background="#E18100"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:background="@null"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/section3Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/number3_blue"
+            android:scaleType="fitCenter"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/question7Button"
+            android:src="@drawable/man5"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/question8Button"
+            android:src="@drawable/woman4"
+            android:onClick="openQuestion"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/question9Button"
+            android:src="@drawable/man4"
+            android:onClick="openQuestion"/>
+    </LinearLayout>
+</RelativeLayout>
