@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nexus-2000", "Nexus-2000\Nexus-2000.vcproj", "{542A588A-038F-4D49-983D-C63CF6D7B221}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{542A588A-038F-4D49-983D-C63CF6D7B221}.Debug|Win32.ActiveCfg = Debug|Win32
+		{542A588A-038F-4D49-983D-C63CF6D7B221}.Debug|Win32.Build.0 = Debug|Win32
+		{542A588A-038F-4D49-983D-C63CF6D7B221}.Release|Win32.ActiveCfg = Release|Win32
+		{542A588A-038F-4D49-983D-C63CF6D7B221}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
