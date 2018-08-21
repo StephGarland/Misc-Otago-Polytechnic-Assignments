@@ -1,0 +1,12 @@
+Reflection anecdote bank:
+
+Memory management:
+We discovered that our system wasn’t writing to our text file as it once was. 
+Because we’ve learnt from our humble bumbling beginnings, we knew to start our sleuthing by checking that our basic test script for the SD Card Module still worked. It did.
+We’d noticed in earlier iterations that some file names caused our program to behave erratically. It was an untested hypothesis that this was caused by long file names, and saving to our file ‘log.txt’ was about as short as it got, but nethertheless, we were able to rule file name out as the fault.
+We then tested to see if writing Strings (instead of char arrays) was causing problems. During this process we discovered that a common complaint, especially using concatenated strings as we were, was poor dynamic memory allocation. During this leg of the investigation we noted that our file successfully wrote when our strings were 34 characters or less. We also noted that we were using around 77% of our arduino’s memory and were sporadically getting warnings about potential errors caused by not enough memory.
+Based on these findings we worked at optimising memory and were able to achieve a 16% reduction. 
+We accomplished this by:
+- Replacing global sensor readings with local (because we were getting a new readings every loop anyway - no need to remember.
+- Appending individual readings to the file as they come (rather than building a big-long-all-inclusive-memory-hungry string and then adding the finished thing in its entirety.)
+
